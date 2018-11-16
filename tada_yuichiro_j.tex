@@ -1,0 +1,479 @@
+% !TEX TS-program = xelatex%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,sans]{moderncv} 
+% Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage{mathpazo}
+%\usepackage[no-math]{fontspec}
+%\setmainfont{Palatino}
+%\setsansfont{Optima}
+
+\usepackage[multi,deluxe,bold,expert]{otf}
+
+\usepackage{comment}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{多田} % Your first name
+\familyname{祐一郎} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{履歴書}
+\address{名古屋大学ES館6階}{464-8602 愛知県名古屋市千種区不老町}
+\mobile{080-9566-9181}
+%\phone{33 (1) 44 32 80 00}
+%\fax{(000) 111 1113}
+\email{tada.yuichiro@e.mbox.nagoya-u.ac.jp}
+\homepage{https://nekomammat.github.io}{https://nekomammat.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\gtfamily
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\begin{comment}
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-2] % Dummy text
+\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+\section{雇用, フェローシップ}
+
+\cventry{2018.04--}{日本学術振興会特別研究員PD}{名古屋大学大学院 理学研究科 宇宙論研究室}{}{}{}
+\cventry{2017.04--\\2018.03}{ポスドク研究員}
+{Institut d'Astrophysique de Paris}{UMR 7095 du CNRS et Sorbonne Universit\'e, 98 bis bd Arago, 75014 Paris, France}{}{}
+\cventry{2015.04--\\2017.03}{日本学術振興会特別研究員DC2}{東京大学 カブリ数物連携宇宙研究機構, 宇宙線研究所}{}{}{}
+\cventry{2012.10--\\2017.03}{フォトンサイエンス・リーディング大学院}{東京大学 カブリ数物連携宇宙研究機構, 宇宙線研究所}{}{}{}
+
+
+\section{学歴}
+
+\cventry{2017.03.23}{博士（理学）}{東京大学大学院理学系研究科物理学専攻}{}{}
+{指導教官: 川崎雅裕, 村山斉}
+\cventry{2014.03.24}{修士（理学）}{東京大学大学院理学系研究科物理学専攻}{}{}
+{指導教官: 川崎雅裕, 村山斉}
+\cventry{2012.03.23}{学士（理学）}{東京大学理学部物理学科}{}{}{}
+
+
+\section{キーワード}
+\subsection{宇宙論的摂動}
+\cvitem{}{\vspace{-10pt}
+\begin{itemize} \itemsep2mm
+\item インフレーション
+	\begin{itemize}
+	\item ストカスティック効果, $\delta N$形式, 非ガウス性
+	\end{itemize}
+\item 原始ブラックホール (PBH)
+	\begin{itemize}
+	\item PBH連星からの重力波, バイアス・クラスター効果
+	\end{itemize}
+\end{itemize}
+}
+
+\subsection{素粒子的宇宙論}
+\cvitem{}{\vspace{-10pt}
+\begin{itemize} \itemsep2mm
+\item インフレーション
+	\begin{itemize}
+	\item 超重力理論, 大統一理論, 修正重力
+	\end{itemize}
+\item カイラル粒子生成
+	\begin{itemize}
+	\item インフレーション磁場生成, カイラル重力波, レプト・バリオジェネシス
+	\end{itemize}
+\end{itemize}
+}
+
+
+\section{論文}
+
+\cvitem{14.}{L.~Pinol, S.~Renaux-Petel and Y.~Tada, \textbf{A critical look at stochastic inflation}, arXiv:1806.10126 [gr-qc].}
+\cvitem{13.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida, 
+	\textbf{\boldmath $\mathcal O(10) M_\odot$ primordial black holes and string axion dark matter},
+	Phys.\ Rev.\ D 96, no. 12, 123527 (2017) %doi:10.1103/PhysRevD.96.123527 
+	[arXiv:1709.07865 [astro-ph.CO]].}
+\cvitem{12.}{T.~Fujita, R.~Namba and Y.~Tada,
+	\textbf{Does the detection of primordial gravitational waves exclude low energy inflation?},
+	Phys.\ Lett.\ B 778, 17 (2018) %doi:10.1016/j.physletb.2017.12.014 
+	[arXiv:1705.01533 [astro-ph.CO]].}
+\cvitem{11.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+	\textbf{Inflationary Primordial Black Holes as All Dark Matter},
+	Phys.\ Rev.\ D 96, no. 4, 043504 (2017) %doi:10.1103/PhysRevD.96.043504 
+	[arXiv:1701.02544 [astro-ph.CO]].}
+\cvitem{10.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+	\textbf{Inflationary primordial black holes for the LIGO gravitational wave events and pulsar timing array experiments},
+	Phys.\ Rev.\ D 95, no. 12, 123510 (2017) %doi:10.1103/PhysRevD.95.123510
+	[arXiv:1611.06130 [astro-ph.CO]].}
+\cvitem{9.}{Y.~Tada and V.~Vennin,
+	\textbf{\boldmath Squeezed Bispectrum in the $\delta N$ Formalism: Local Observer Effect in Field Space},
+	JCAP 1702, no. 02, 021 (2017) %doi:10.1088/1475-7516/2017/02/021
+	[arXiv:1609.08876 [astro-ph.CO]].}
+\cvitem{8.}{M.~Kawasaki, A.~Kusenko, Y.~Tada and T.~T.~Yanagida,
+	\textbf{Primordial black holes as dark matter in supergravity inflation models},
+	Phys.\ Rev.\ D 94, no. 8, 083523 (2016) %doi:10.1103/PhysRevD.94.083523
+	[arXiv:1606.07631 [astro-ph.CO]].}
+\cvitem{7.}{K.~Inomata, M.~Kawasaki and Y.~Tada,
+	\textbf{Revisiting constraints on small scale perturbations from big-bang nucleosynthesis},
+	Phys.\ Rev.\ D 94, no. 4, 043527 (2016) %doi:10.1103/PhysRevD.94.043527
+	[arXiv:1605.04646 [astro-ph.CO]].}
+\cvitem{6.}{M.~Kawasaki and Y.~Tada,
+	\textbf{Can massive primordial black holes be produced in mild waterfall hybrid inflation?},
+	JCAP 1608, no. 08, 041 (2016) %doi:10.1088/1475-7516/2016/08/041
+	[arXiv:1512.03515 [astro-ph.CO]].}
+\cvitem{5.}{T.~Fujita, R.~Namba, Y.~Tada, N.~Takeda and H.~Tashiro,
+	\textbf{Consistent generation of magnetic fields in axion inflation models},
+	JCAP 1505, no. 05, 054 (2015) %doi:10.1088/1475-7516/2015/05/054
+	[arXiv:1503.05802 [astro-ph.CO]].}
+\cvitem{4.}{Y.~Tada and S.~Yokoyama,
+	\textbf{Primordial black holes as biased tracers},
+	Phys.\ Rev.\ D 91, no. 12, 123534 (2015) %doi:10.1103/PhysRevD.91.123534
+	[arXiv:1502.01124 [astro-ph.CO]].}
+\cvitem{3.}{A.~Ota, T.~Sekiguchi, Y.~Tada and S.~Yokoyama,
+	\textbf{Anisotropic CMB distortions from non-Gaussian isocurvature perturbations},
+	JCAP 1503, no. 03, 013 (2015) %doi:10.1088/1475-7516/2015/03/013
+	[arXiv:1412.4517 [astro-ph.CO]].}
+\cvitem{2.}{T.~Fujita, M.~Kawasaki and Y.~Tada,
+	\textbf{\boldmath Non-perturbative approach for curvature perturbations in stochastic $\delta N$ formalism},
+	JCAP 1410, no. 10, 030 (2014) %doi:10.1088/1475-7516/2014/10/030
+	[arXiv:1405.2187 [astro-ph.CO]].}
+\cvitem{1.}{T.~Fujita, M.~Kawasaki, Y.~Tada and T.~Takesako,
+	\textbf{A new algorithm for calculating the curvature perturbations in stochastic inflation},
+	JCAP 1312, 036 (2013) %doi:10.1088/1475-7516/2013/12/036
+	[arXiv:1308.4754 [astro-ph.CO]].}
+
+\vspace{10pt}
+\cventry{博士論文}{インフレーション宇宙における曲率ゆらぎと原始ブラックホール形成}{}{}{}
+{東京大学大学院理学系研究科物理学専攻\\ 
+東京大学国際高等研究所カブリ数物連携宇宙研究機構\\
+東京大学宇宙線研究所}
+\cventry{修士論文}{インフレーション宇宙に対するストカスティックアプローチ}{}{}{}
+{東京大学大学院理学系研究科物理学専攻\\ 
+東京大学国際高等研究所カブリ数物連携宇宙研究機構}
+
+
+\section{研究発表}
+\subsection{国際会議}
+\cventry{2018.11.05--11.09}{Stochastic formalism and curvature perturbations}{The 28th Workshop on General Relativity and Gravitation in Japan (JGRG28)}{立教大学}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
+\cventry{2018.08.08--08.10}{Stochastic inflation in a general field space}{International Conference on Modified Gravity 2018 (MOGRA 2018)}{名古屋大学}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
+\cventry{2018.07.01--07.07}{Stochastic inflation in a general field space}{Fifteenth Marcel Grosmann Meeting}{University of Rome``La Sapienza"}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
+\cventry{2018.01.20\\01.21}{Subtleties in stochastic formalism - Ito vs. Stratonovich}{Infrared physics of gauge theories and quantum dynamics of inflation}{びわこクラブ}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{口頭, 査読あり}
+\cventry{2017.08.28--09.01}{Stochastic Formalism in Curved Field Space}{The 21st annual International Conference on Particle Physics and Cosmology (COSMO-17)}
+{The Universite Paris Diderot site, Amphitheatre Buffon}
+{L. Petel, S. Renaux-Petel, and Y. Tada}{口頭, 査読あり}
+\cventry{2017.05.27--06.02}{Primordial Black Hole, Dark Matter, and Gravitational Wave}
+{Gordon Research Conference \& Seminars ``String Theory \& Cosmology"}{Renaissance Tuscany Il Ciocco, Lucca (Barga), Italy}
+{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{ポスター, 査読あり}
+\cventry{2016.10.24--10.28}{Squeezed Bispectrum in the delta N Formalism without Gauge Artifact}
+{The 26th Workshop on General Relativity and Gravitation in Japan (JGRG26)}{大阪市立大学}
+{Y. Tada and V. Vennin}{口頭, 査読あり}
+\cventry{2016.08.24--08.28}{PBH Dark Matter in Supergravity Inflation Models}{RESCEU Summer School}{岐阜}
+{M. Kawasaki, A. Kusenko, Y. Tada, and T. T. Yanagida}{口頭, 査読あり}
+\cventry{2015.12.14--12.18}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}
+{Second LeCosPA International Symposium "Everything About Gravity"}{国立台湾大学}{M. Kawasaki and Y. Tada}{口頭, 査読あり}
+\cventry{2015.09.07--09.11}{PRIMORDIAL BLACK HOLES AS BIASED TRACERS}{International Conference on Particle Physics and Cosmology (COSMO-15)}
+{Warsaw}{Y. Tada and S. Yokoyama}{口頭, 査読あり}
+\cventry{2014.08.25--08.29}{Non-perturbative approach for curvature perturbations in stochastic-delta N formalism}
+{International Conference on Particle Physics and Cosmology (COSMO 2014)}{Chicago}{T. Fujita, M. Kawasaki, and Y. Tada}{ポスター, 査読あり}
+\cventry{2013.09.30--10.03}{A new algorithm for calculating the curvature perturbations in stochastic inflation}
+{KEK Theory Meeting on Particle Physics Phenomenology (KEK-PH2013 FALL)}{KEK}{T. Fujita, M. Kawasaki, Y. Tada, and T. Takesako}{口頭, 査読あり}
+
+\medskip
+\subsection{国内会議}
+\cventry{2018.09.14--09.17}{ストカスティックインフレーションのノイズ処方について}{日本物理学会秋季大会}{信州大学}
+{藤田智弘, L. Pinol, S. Renaux-Petel, 多田祐一郎, 徳田順生}{口頭, 査読なし}
+\cventry{2017.09.12--09.15}{曲がった場空間におけるストカスティック形式}{日本物理学会秋季大会}{宇都宮大学}
+{L. Pinol, S. Renaux-Petel, 多田祐一郎}{口頭, 査読なし}
+\cventry{2016.09}{超重力ニューインフレーションにおける原始ブラックホール形成}{日本物理学会秋季大会}{宮崎大学}
+{川崎雅裕, A. Kusenko, 多田祐一郎, 柳田勉}{口頭, 査読なし}
+\cventry{2016.03}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{松江素粒子物理学研究会}{島根大学}
+{川崎雅裕, 多田祐一郎}{口頭, 査読なし}
+\cventry{2015.09}{超対称ハイブリッドインフレーションでの原始ブラックホール形成}{日本物理学会秋季大会}{大阪市立大学}
+{川崎雅裕, 多田祐一郎}{口頭, 査読なし}
+\cventry{2015.03}{バイアス効果による原始ブラックホール暗黒物質への制限}{日本物理学会年次大会}{早稲田大学}
+{多田祐一郎, 横山修一郎}{口頭, 査読なし}
+\cventry{2014.09}{ストカスティック-$\delta N$形式による曲率ゆらぎへの非摂動的アプローチ}{日本物理学会秋季大会}{佐賀大学}
+{藤田智弘, 川崎雅裕, 多田祐一郎}{口頭, 査読なし}
+\cventry{2013.09}{ストカスティック効果を用いたインフレーションのゆらぎの解析}{日本物理学会秋季大会}{高知大学}
+{藤田智弘, 川崎雅裕, 多田祐一郎, 竹迫知博}{口頭, 査読なし}
+
+
+\medskip
+\subsection{セミナー}
+\cventry{2018.10.09}{一般的場空間におけるストカスティックインフレーション}{立教大学}{東京}
+{藤田智弘, L. Pinol, S. Renaux-Petel, 多田祐一郎, 徳田順生}{}
+\cventry{2018.06.26}{Stochastic inflation in a general field space}{Laboratoire Astroparticule et Cosmologie}{Paris}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{}
+\cventry{2017.09.20}{Stochastic Formalism in Curved Field Space}{名古屋大学}{愛知}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{}
+\cventry{2017.09.19}{Stochastic Formalism in Curved Field Space}{神戸大学}{兵庫}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{}
+\cventry{2017.09.04}{Stochastic Formalism in Curved Field Space}{RESCEU}{東京}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{}
+\cventry{2017.04.20}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{Institut Astrophysique de Paris}{Paris}
+{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{}
+\cventry{2016.12.16}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{早稲田大学}{東京}
+{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{}
+\cventry{2016.06.22}{Stochastic-delta N formalism and massive primordial black hole formation in hybrid inflation}{Institute of Cosmology and Gravitation}{Portsmouth}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2016.04.18}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{東京大学}{東京}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2016.03.29}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{京都大学}{京都}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2016.02.29}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{RESCEU}{東京}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2016.01.27}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{KEK}{茨城}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2015.09.14--09.18}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{University of Padova}{Padova}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2015.09.21}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{Institut Astrophysique de Paris}{Paris}
+{M. Kawasaki and Y. Tada}{}
+\cventry{2015.06.25}{バイアストレーサーとしての原始ブラックホール}{名古屋大学}{愛知}
+{多田祐一郎, 横山修一郎}{}
+\cventry{2015.02.16}{Primordial black holes as biased tracers}{Joint seminar of gravity and cosmology @ IPMU}{千葉}
+{Y. Tada and S. Yokoyama}{}
+\cventry{2014.08.19--08.24}{Stochastic-$\delta N$ formalism}{Helsinki U.}{Helsinki}
+{T. Fujita, M. Kawasaki, Y. Tada, and T. Takesako}{}
+
+
+\section{研究者活動}
+\cventry{2014.10.01--12.22}{留学}{}{ヘルシンキ大学 Kari Enqvist 教授}{}{フォトンサイエンス・リーディング大学院のコースワーク}
+\cventry{}{査読}{}{}{}{European Physical Journal C (EPJC), Progress of Theoretical and Experimental Physics (PTEP)}
+
+
+\section{受賞歴}
+\cventry{2017.02.24}{所長賞（博士部門）}{}{第6回 修士博士研究発表会}{宇宙線研究所}{}
+\cventry{2015.07.27--07.30}{ポスターアワード1位}{}{第45回天文・天体物理若手夏の学校}{長野}{}
+\cventry{2013.07.29--08.01}{ポスターアワード1位}{}{第43回天文・天体物理若手夏の学校}{宮城}{}
+
+
+
+\section{指導教員}
+\cvitem{}{
+\begin{minipage}[t]{0.49\textwidth}
+川崎雅裕教授 \\
+宇宙線研究所 \\
+東京大学 \\ 
+柏市柏の葉5-1-5 \\ 
+千葉県 277-8582 \\
+kawasaki@icrr.u-tokyo.ac.jp
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+杉山直教授 \\
+名古屋大学ES館6階 \\
+名古屋市千種区不老町 \\
+愛知県 464-8602 \\
+naoshi@nagoya-u.jp
+\end{minipage}
+}
+\vspace{2mm}
+
+\cvitem{}{
+\begin{minipage}[t]{0.49\textwidth}
+Prof. S\'ebastien Renaux-Petel \\
+Institut d’Astrophysique de Paris \\ 
+UMR-7095 du CNRS \\ 
+Universit\'e Pierre et Marie Curie \\ 
+98 bis bd Arago, 75014 Paris, France \\
+renaux@iap.fr
+\end{minipage}
+}
+
+\begin{comment}
+\cvitem{}{
+\begin{minipage}[t]{0.49\textwidth}
+Prof. Jun'ichi Yokoyama \\
+Research Center for the Early Universe \\
+The University of Tokyo \\ 
+7-3-1 Hongo, Bunkyo-ku \\ 
+Tokyo 113-0033, Japan \\
+yokoyama@resceu.s.u-tokyo.ac.jp
+\end{minipage}
+}
+\end{comment}
+
+
+
+\begin{comment}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
+\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2010--2011}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a job title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my otherwise stellar CV.}
+
+\cventry{2009--2010}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems. Allowed me to become expert in all forms of martial arts and weaponry.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{comment}
+\end{document}
