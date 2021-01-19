@@ -69,6 +69,7 @@
 %-------------------------------------------------------------------------------
 %                required packages
 %-------------------------------------------------------------------------------
+
 % \AtEndPreamble hook (loading etoolbox instead of defining the macro, as to avoid incompatibilities with etoolbox (and packages relying on it) defining the macro too)
 \RequirePackage{etoolbox}
 %\let\@endpreamblehook\@empty
@@ -467,6 +468,7 @@
 % makes the letter closing
 % usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{}
+
 
 
 \endinput
