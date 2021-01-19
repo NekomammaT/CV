@@ -1,4 +1,4 @@
-% !TEX TS-program = xelatex%
+% !TEX TS-program = xelatex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % "ModernCV" CV and Cover Letter
@@ -36,17 +36,36 @@
 
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
+\usepackage{zxjatype}
 %\usepackage{mathpazo}
 %\usepackage[no-math]{fontspec}
-%\setmainfont{Palatino}
-%\setsansfont{Optima}
-
-\usepackage[multi,deluxe,bold,expert,uplatex]{otf}
-\usepackage[utf8]{inputenc}
+\setmainfont{Palatino}
+\setsansfont{Optima}
+\setjamainfont{Hiragino Mincho ProN W3}
+\setjasansfont[BoldFont=Hiragino Sans W6]{Hiragino Sans W3}
+\xeCJKsetup{CJKecglue={}}
 
 \usepackage{comment}
+\usepackage{amsmath,amssymb}
+\usepackage{academicons}
+
+\newcommand{\doi}[2]{\href{https://doi.org/#1}{#2}}
+\newcommand{\arxiv}[2]{\href{https://arxiv.org/abs/#1}{arXiv:#1 [#2]}}
+
+\newenvironment{footnoteSBL}{
+	\baselineskip=10pt
+}
+
+\newfontfamily{\fab}{Font Awesome 5 Brands Regular}
+\newfontfamily{\fas}{Font Awesome 5 Free Solid}
+\newcommand{\facebook}{{\fab\symbol{"F09A}}}
+\newcommand{\twitter}{{\fab\symbol{"F099}}}
+\newcommand{\play}{{\fas\symbol{"F04B}}}
+\newcommand{\github}{{\fab\symbol{"F09B}}}
+
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -56,22 +75,30 @@
 \familyname{祐一郎} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{履歴書}
-\address{名古屋大学ES館6階}{464-8602 愛知県名古屋市千種区不老町}
+\title{履歴書 \vspace{30pt}}
+\address{466-0833 愛知県名古屋市}{昭和区隼人町 15-10-4A}
 \mobile{080-9566-9181}
 %\phone{33 (1) 44 32 80 00}
 %\fax{(000) 111 1113}
 \email{tada.yuichiro@e.mbox.nagoya-u.ac.jp}
-\homepage{https://nekomammat.github.io}{https://nekomammat.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-%\extrainfo{additional information}
-%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\homepage{nekomammat.github.io/indexJP.html}{https://nekomammat.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{1989年11月1日生まれ (満30歳) \\
+{\large \href{https://www.facebook.com/yuichiro.tada.90}{\facebook} \, 
+\href{https://twitter.com/NekomammaT}{\twitter} \, 
+\href{https://inspirehep.net/authors/1316436}{\aiInspire} \, 
+\href{https://orcid.org/0000-0001-6199-7033}{\aiOrcid} \, 
+\href{https://publons.com/researcher/2666248/yuichiro-tada/}{\aiPublons} \, 
+\href{https://researchmap.jp/yuichiro_tada}{\play} \, 
+\href{https://scholar.google.com/citations?user=APdAYAwAAAAJ&hl=ja}{\aiGoogleScholar} \, 
+\href{https://github.com/NekomammaT}{\github}}}
+\photo[30mm][0.4pt]{fig/photo.pdf} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\gtfamily
+\sffamily
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
@@ -106,245 +133,278 @@
 
 \makecvtitle % Print the CV title
 
-\vspace{-10pt}
+\vspace{-40pt}
 \section{職歴, フェローシップ}
+\cventry{2019年4月--\\現在}{非常勤講師}{大同大学}{名古屋}{}{力学1, 2}
+\cventry{2018年4月--\\現在}{日本学術振興会特別研究員PD}{名古屋大学}{名古屋}{}{理学研究科 宇宙論研究室}
+\cventry{2017年4月--\\2018年3月}{ポスドク研究員}{Institut d'Astrophysique de Paris}{Paris}{France}{S\'ebastien Renaux-Petel 博士のグループ}
+\cventry{2015年4月--\\2017年3月}{日本学術振興会特別研究員DC2}{東京大学}{千葉}{}{カブリ数物連携宇宙研究機構・宇宙線研究所}
+\cventry{2012年10月--2017年3月}{フォトンサイエンス・リーディング大学院}{東京大学}{千葉}{}{カブリ数物連携宇宙研究機構・宇宙線研究所}
 
-\cventry{2019.04--}{非常勤講師 (力学1, 2)}{大同大学}{}{}{}
-\cventry{2018.04--}{日本学術振興会特別研究員PD}{名古屋大学大学院 理学研究科 宇宙論研究室}{}{}{}
-\cventry{2017.04--\\2018.03}{ポスドク研究員}
-{Institut d'Astrophysique de Paris}{UMR 7095 du CNRS et Sorbonne Universit\'e, 98 bis bd Arago, 75014 Paris, France}{}{}
-\cventry{2015.04--\\2017.03}{日本学術振興会特別研究員DC2}{東京大学 カブリ数物連携宇宙研究機構, 宇宙線研究所}{}{}{}
-\cventry{2012.10--\\2017.03}{フォトンサイエンス・リーディング大学院}{東京大学 カブリ数物連携宇宙研究機構, 宇宙線研究所}{}{}{}
-
-
-\section{学歴}
-
-\cventry{2017.03.23}{博士 (理学)}{東京大学大学院理学系研究科物理学専攻}{}{}
-{指導教官: 川崎雅裕, 村山斉}
-\cventry{2014.03.24}{修士 (理学)}{東京大学大学院理学系研究科物理学専攻}{}{}
-{指導教官: 川崎雅裕, 村山斉}
-\cventry{2012.03.23}{学士 (理学)}{東京大学理学部物理学科}{}{}{}
-
-
-\section{キーワード}
-\subsection{宇宙論的摂動}
-\cvitem{}{\vspace{-10pt}
-\begin{itemize} \itemsep2mm
-\item インフレーション
-	\begin{itemize}
-	\item ストカスティック効果, $\delta N$形式, 非ガウス性
-	\end{itemize}
-\item 原始ブラックホール (PBH)
-	\begin{itemize}
-	\item PBH連星からの重力波, バイアス・クラスター効果
-	\end{itemize}
-\end{itemize}
-}
 
 \vspace{-10pt}
-\subsection{素粒子的宇宙論}
-\cvitem{}{\vspace{-10pt}
-\begin{itemize} \itemsep2mm
-\item インフレーション
-	\begin{itemize}
-	\item 超重力理論, 大統一理論, 修正重力
-	\end{itemize}
-\item カイラル粒子生成
-	\begin{itemize}
-	\item インフレーション磁場生成, カイラル重力波, レプト・バリオジェネシス
-	\end{itemize}
+\section{学歴}
+\cventry{2017年\\3月23日}{博士 (理学)}{東京大学}{千葉}{}
+{理学系研究科物理学専攻. 指導教官: 川崎雅裕, 村山斉}
+\cventry{2014年\\3月24日}{修士 (理学)}{東京大学}{東京}{}
+{理学系研究科物理学専攻, 指導教官: 川崎雅裕, 村山斉}
+\cventry{2012年\\3月23日}{学士 (理学)}{東京大学}{東京}{}{理学部物理学科}
+
+
+\vspace{-10pt}
+\section{研究テーマ}
+\subsection{インフレーション}
+\cvitem{}{\vspace{-15pt}
+\begin{itemize} %\itemsep2mm
+	\item[-] ストカスティック効果, $\delta N$形式, 非ガウス性
+	\item[-] 超重力, 大統一理論, 修正重力
+	\item[-] 曲がった対象空間
 \end{itemize}
 }
+
+\vspace{-15pt}
+\subsection{原始ブラックホール }
+\cvitem{}{\vspace{-15pt}
+\begin{itemize}
+	\item[-] 重力波, バイアス・クラスター効果
+\end{itemize}
+}
+
+\vspace{-15pt}
+\subsection{ヘリカル粒子生成}
+\cvitem{}{\vspace{-15pt}
+\begin{itemize} %\itemsep2mm
+	\item[-] インフレーション磁場生成, ヘリカル重力波, レプトン・バリオン生成
+\end{itemize}
+}
+
+
 
 
 
 \section{論文}
 
+\cvitem{20.}{T.~Suyama, Y.~Tada and M.~Yamaguchi,
+	\textbf{Local observer effect on the cosmological soft theorem},
+	[\arxiv{2008.13364}{astro-ph.CO}].
+}
+\cvitem{19.}{L.~Pinol, S.~Renaux-Petel and Y.~Tada,
+	\textbf{A manifestly covariant theory of multifield stochastic inflation in phase space},
+	[\arxiv{2008.07497}{astro-ph.CO}].
+}
+\cvitem{18.}{Y.~Mikura, Y.~Tada and S.~Yokoyama,
+	\textbf{Conformal inflation in the metric-affine geometry},
+	[\arxiv{2008.00628}{hep-th}].
+}
+\cvitem{17.}{K.~Kogai and Y.~Tada,
+	\textbf{Escape from the swampland with a spectator field},
+	\doi{10.1103/PhysRevD.101.103514}{Phys. Rev. D \textbf{101}, no.10, 103514 (2020)}
+	[\arxiv{2003.06753}{astro-ph.CO}].
+}
+\cvitem{16.}{N.~Kitajima, Y.~Tada and F.~Takahashi,
+  	\textbf{Stochastic inflation with an extremely large number of \boldmath $e$-folds},
+	\doi{10.1016/j.physletb.2019.135097}{Phys.\ Lett.\ B \textbf{800}, 135097 (2020)}
+	[\arxiv{1908.08694}{hep-ph}].
+}
 \cvitem{15.}{Y.~Tada and S.~Yokoyama,
-	\textbf{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes},
-  	arXiv:1904.10298 [astro-ph.CO].}
+  	\textbf{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes},
+  	\doi{10.1103/PhysRevD.100.023537}{Phys.\ Rev.\ D \textbf{100}, no. 2, 023537 (2019)}
+  	[\arxiv{1904.10298}{astro-ph.CO}].}
 \cvitem{14.}{L.~Pinol, S.~Renaux-Petel and Y.~Tada, 
 	\textbf{Inflationary stochastic anomalies},
-	Class. Quant. Grav. 36, no. 7, 07LT01 (2019)
-	%doi:10.1088/1361-6382/ab097f
-  	[arXiv:1806.10126 [gr-qc]].}
+	\doi{10.1088/1361-6382/ab097f}{Class. Quant. Grav. \textbf{36}, no. 7, 07LT01 (2019)}
+  	[\arxiv{1806.10126}{gr-qc}].}
 \cvitem{13.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida, 
 	\textbf{\boldmath $\mathcal O(10) M_\odot$ primordial black holes and string axion dark matter},
-	Phys.\ Rev.\ D 96, no. 12, 123527 (2017) %doi:10.1103/PhysRevD.96.123527 
-	[arXiv:1709.07865 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.96.123527}{Phys.\ Rev.\ D \textbf{96}, no. 12, 123527 (2017)} 
+	[\arxiv{1709.07865}{astro-ph.CO}].}
 \cvitem{12.}{T.~Fujita, R.~Namba and Y.~Tada,
 	\textbf{Does the detection of primordial gravitational waves exclude low energy inflation?},
-	Phys.\ Lett.\ B 778, 17 (2018) %doi:10.1016/j.physletb.2017.12.014 
-	[arXiv:1705.01533 [astro-ph.CO]].}
+	\doi{10.1016/j.physletb.2017.12.014}{Phys.\ Lett.\ B \textbf{778}, 17 (2018)} 
+	[\arxiv{1705.01533}{astro-ph.CO}].}
 \cvitem{11.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
 	\textbf{Inflationary Primordial Black Holes as All Dark Matter},
-	Phys.\ Rev.\ D 96, no. 4, 043504 (2017) %doi:10.1103/PhysRevD.96.043504 
-	[arXiv:1701.02544 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.96.043504}{Phys.\ Rev.\ D \textbf{96}, no. 4, 043504 (2017)} 
+	[\arxiv{1701.02544}{astro-ph.CO}].}
 \cvitem{10.}{K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
 	\textbf{Inflationary primordial black holes for the LIGO gravitational wave events and pulsar timing array experiments},
-	Phys.\ Rev.\ D 95, no. 12, 123510 (2017) %doi:10.1103/PhysRevD.95.123510
-	[arXiv:1611.06130 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.95.123510}{Phys.\ Rev.\ D \textbf{95}, no. 12, 123510 (2017)}
+	[\arxiv{1611.06130}{astro-ph.CO}].}
 \cvitem{9.}{Y.~Tada and V.~Vennin,
 	\textbf{\boldmath Squeezed Bispectrum in the $\delta N$ Formalism: Local Observer Effect in Field Space},
-	JCAP 1702, no. 02, 021 (2017) %doi:10.1088/1475-7516/2017/02/021
-	[arXiv:1609.08876 [astro-ph.CO]].}
+	\doi{10.1088/1475-7516/2017/02/021}{JCAP \textbf{1702}, no. 02, 021 (2017)}
+	[\arxiv{1609.08876}{astro-ph.CO}].}
 \cvitem{8.}{M.~Kawasaki, A.~Kusenko, Y.~Tada and T.~T.~Yanagida,
 	\textbf{Primordial black holes as dark matter in supergravity inflation models},
-	Phys.\ Rev.\ D 94, no. 8, 083523 (2016) %doi:10.1103/PhysRevD.94.083523
-	[arXiv:1606.07631 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.94.083523}{Phys.\ Rev.\ D \textbf{94}, no. 8, 083523 (2016)}
+	[\arxiv{1606.07631}{astro-ph.CO}].}
 \cvitem{7.}{K.~Inomata, M.~Kawasaki and Y.~Tada,
 	\textbf{Revisiting constraints on small scale perturbations from big-bang nucleosynthesis},
-	Phys.\ Rev.\ D 94, no. 4, 043527 (2016) %doi:10.1103/PhysRevD.94.043527
-	[arXiv:1605.04646 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.94.043527}{Phys.\ Rev.\ D \textbf{94}, no. 4, 043527 (2016)}
+	[\arxiv{1605.04646}{astro-ph.CO}].}
 \cvitem{6.}{M.~Kawasaki and Y.~Tada,
 	\textbf{Can massive primordial black holes be produced in mild waterfall hybrid inflation?},
-	JCAP 1608, no. 08, 041 (2016) %doi:10.1088/1475-7516/2016/08/041
-	[arXiv:1512.03515 [astro-ph.CO]].}
+	\doi{10.1088/1475-7516/2016/08/041}{JCAP \textbf{1608}, no. 08, 041 (2016)}
+	[\arxiv{1512.03515}{astro-ph.CO}].}
 \cvitem{5.}{T.~Fujita, R.~Namba, Y.~Tada, N.~Takeda and H.~Tashiro,
 	\textbf{Consistent generation of magnetic fields in axion inflation models},
-	JCAP 1505, no. 05, 054 (2015) %doi:10.1088/1475-7516/2015/05/054
-	[arXiv:1503.05802 [astro-ph.CO]].}
+	\doi{10.1088/1475-7516/2015/05/054}{JCAP \textbf{1505}, no. 05, 054 (2015)}
+	[\arxiv{1503.05802}{astro-ph.CO}].}
 \cvitem{4.}{Y.~Tada and S.~Yokoyama,
 	\textbf{Primordial black holes as biased tracers},
-	Phys.\ Rev.\ D 91, no. 12, 123534 (2015) %doi:10.1103/PhysRevD.91.123534
-	[arXiv:1502.01124 [astro-ph.CO]].}
+	\doi{10.1103/PhysRevD.91.123534}{Phys.\ Rev.\ D \textbf{91}, no. 12, 123534 (2015)}
+	[\arxiv{1502.01124}{astro-ph.CO}].}
 \cvitem{3.}{A.~Ota, T.~Sekiguchi, Y.~Tada and S.~Yokoyama,
 	\textbf{Anisotropic CMB distortions from non-Gaussian isocurvature perturbations},
-	JCAP 1503, no. 03, 013 (2015) %doi:10.1088/1475-7516/2015/03/013
-	[arXiv:1412.4517 [astro-ph.CO]].}
+	\doi{10.1088/1475-7516/2015/03/013}{JCAP \textbf{1503}, no. 03, 013 (2015)}
+	[\arxiv{1412.4517}{astro-ph.CO}].}
 \cvitem{2.}{T.~Fujita, M.~Kawasaki and Y.~Tada,
 	\textbf{\boldmath Non-perturbative approach for curvature perturbations in stochastic $\delta N$ formalism},
-	JCAP 1410, no. 10, 030 (2014) %doi:10.1088/1475-7516/2014/10/030
-	[arXiv:1405.2187 [astro-ph.CO]].} 
+	\doi{10.1088/1475-7516/2014/10/030}{JCAP \textbf{1410}, no. 10, 030 (2014)}
+	[\arxiv{1405.2187}{astro-ph.CO}].} 
 \cvitem{1.}{T.~Fujita, M.~Kawasaki, Y.~Tada and T.~Takesako,
 	\textbf{A new algorithm for calculating the curvature perturbations in stochastic inflation},
-	JCAP 1312, 036 (2013) %doi:10.1088/1475-7516/2013/12/036
-	[arXiv:1308.4754 [astro-ph.CO]].}
+	\doi{10.1088/1475-7516/2013/12/036}{JCAP \textbf{1312}, 036 (2013)}
+	[\arxiv{1308.4754}{astro-ph.CO}].}
 
 \vspace{10pt}
 \cventry{博士論文}{インフレーション宇宙における曲率ゆらぎと原始ブラックホール形成}{}{}{}
-{東京大学大学院理学系研究科物理学専攻\\ 
-東京大学国際高等研究所カブリ数物連携宇宙研究機構\\
-東京大学宇宙線研究所}
+{113-0033 東京都文京区 東京大学 理学系研究科物理学専攻 \\
+277-8583 千葉県柏市 柏の葉5-1-5 東京大学 カブリ数物連携宇宙研究機構 \\
+277-8582 千葉県柏市 柏の葉5-1-5 東京大学 宇宙線研究所}
 \cventry{修士論文}{インフレーション宇宙に対するストカスティックアプローチ}{}{}{}
-{東京大学大学院理学系研究科物理学専攻\\ 
-東京大学国際高等研究所カブリ数物連携宇宙研究機構}
+{113-0033 東京都文京区 東京大学 理学系研究科物理学専攻 \\
+277-8583 千葉県柏市 柏の葉5-1-5 東京大学 カブリ数物連携宇宙研究機構}
 
 
-\section{研究発表}
-\subsection{国際会議}
-
-\cventry{2019.06}{Stochastic formalism and curvature perturbation}{3-day workshop: INFLATION AND GEOMETRY}{IAP}{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, J. Tokuda, and V. Vennin}{口頭, 査読あり}
-\cventry{2019.05}{PBH tower in multi-phase inflation}{2 day mini-workshop: Axion Cosmology}{京都大学}{Y. Tada and S. Yokoyama}{口頭, 査読あり}
-\cventry{2019.04}{PBH tower in multi-phase inflation}{Future Perspective in Cosmology and Gravity}{名古屋大学}{Y. Tada and S. Yokoyama}{口頭, 査読あり}
-\cventry{2019.03}{PBH tower in multi-phase inflation}{Accelerating Universe in the Dark}{京都大学}{Y. Tada and S. Yokoyama}{口頭, 査読あり}
-\cventry{2019.02}{Aspects of primordial black hole as dark matter}{FAPESP-JSPS Workshop on dark energy, dark matter, and galaxies}{University of Sao Paulo}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{口頭, 査読あり}
-\cventry{2018.11}{Stochastic formalism and curvature perturbations}{The 28th Workshop on General Relativity and Gravitation in Japan (JGRG28)}{立教大学}
-{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
-\cventry{2018.08}{Stochastic inflation in a general field space}{International Conference on Modified Gravity 2018 (MOGRA 2018)}{名古屋大学}
-{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
-\cventry{2018.07}{Stochastic inflation in a general field space}{Fifteenth Marcel Grosmann Meeting}{University of Rome ``La Sapienza"}
-{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{口頭, 査読あり}
-\cventry{2018.01}{Subtleties in stochastic formalism - Ito vs. Stratonovich}{Infrared physics of gauge theories and quantum dynamics of inflation}{びわこクラブ}
-{L. Pinol, S. Renaux-Petel, and Y. Tada}{口頭, 査読あり}
-\cventry{2017.08}{Stochastic Formalism in Curved Field Space}{The 21st annual International Conference on Particle Physics and Cosmology (COSMO-17)}
+\section{国際会議}
+\cventry{20th Aug. 2020}{Manifestly covariant theory of stochastic inflation}{The 14th International Conference on Gravitation, Astrophysics and Cosmology (ICGAC14)}{National Central University, Taiwan (Web Conference)}{L. Pinol, S. Renaux-Petel, Y. Tada, V. Vennin}{oral, refereed}
+\cventry{6th Dec. 2019}{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes}{Focus Week on Primordial Black Holes}{Kavli IPMU}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{27th Nov. 2019}{Stochastic inflation with an extremely large number of e-folds}{The 29th Workshop on General Relativity and Gravitation in Japan (JGRG29)}{Kobe University}{N. Kitajima, Y. Tada, and F. Takahashi}{oral, refereed}
+\cventry{19th Nov. 2019}{Stochastic approach to non-Gaussianity}{Theoretical aspects of non-Gaussianity from modern perspectives}{Kyoto University}{Y. Tada and V. Vennin}{oral, refereed}
+\cventry{16th Oct. 2019}{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes}{Gravitational Wave Physics and Astronomy Workshop (GWPAW 2019)}{The University of Tokyo}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{4th Sep. 2019}{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes}{COSMO19}{Aachen University}{Y. Tada and S. Yokoyama}{poster, refereed}
+\cventry{16th Aug. 2019}{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes}{15th Rencontres du Vietnam "COSMOLOGY"}{ICISE}{Y. Tada and S. Yokoyama}{oral, invited}
+\cventry{13th Jun. 2019}{Stochastic formalism and curvature perturbation}{3-day workshop: INFLATION AND GEOMETRY}{IAP}{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, J. Tokuda, and V. Vennin}{oral, invited}
+\cventry{15th May 2019}{PBH tower in multi-phase inflation}{2-day mini-workshop: Axion Cosmology}{Kyoto University}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{3rd Apr. 2019}{PBH tower in multi-phase inflation}{Future Perspective in Cosmology and Gravity}{Nagoya University}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{7th Mar. 2019}{PBH tower in multi-phase inflation}{Accelerating Universe in the Dark}{Kyoto University}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{19th Feb. 2019}{Aspects of primordial black hole as dark matter}{FAPESP-JSPS Workshop on dark energy, dark matter, and galaxies}{University of Sao Paulo}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{oral, refereed}
+\cventry{8th Nov. 2018}{Stochastic formalism and curvature perturbations}{The 28th Workshop on General Relativity and Gravitation in Japan (JGRG28)}{Rikkyo University}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{oral, refereed}
+\cventry{10th Aug. 2018}{Stochastic inflation in a general field space}{International Conference on Modified Gravity 2018 (MOGRA 2018)}{Nagoya University}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{oral, refereed}
+\cventry{5th Jul. 2018}{Stochastic inflation in a general field space}{Fifteenth Marcel Grosmann Meeting}{University of Rome ``La Sapienza"}
+{T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{oral, refereed}
+\cventry{20th--21st Jan. 2018}{Subtleties in stochastic formalism - Ito vs. Stratonovich}{Infrared physics of gauge theories and quantum dynamics of inflation}{Shiga}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{oral, refereed}
+\cventry{28th Aug.--\\1st Sep. 2017}{Stochastic Formalism in Curved Field Space}{The 21st annual International Conference on Particle Physics and Cosmology (COSMO-17)}
 {The Universite Paris Diderot site, Amphitheatre Buffon}
-{L. Pinol, S. Renaux-Petel, and Y. Tada}{口頭, 査読あり}
-\cventry{2017.05}{Primordial Black Hole, Dark Matter, and Gravitational Wave}
+{L. Pinol, S. Renaux-Petel, and Y. Tada}{oral, refereed}
+\cventry{27th May--\\2nd Jun. 2017}{Primordial Black Hole, Dark Matter, and Gravitational Wave}
 {Gordon Research Conference \& Seminars ``String Theory \& Cosmology"}{Renaissance Tuscany Il Ciocco, Lucca (Barga), Italy}
-{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{ポスター, 査読あり}
-\cventry{2016.10}{Squeezed Bispectrum in the delta N Formalism without Gauge Artifact}
-{The 26th Workshop on General Relativity and Gravitation in Japan (JGRG26)}{大阪市立大学}
-{Y. Tada and V. Vennin}{口頭, 査読あり}
-\cventry{2016.08}{PBH Dark Matter in Supergravity Inflation Models}{RESCEU Summer School}{岐阜}
-{M. Kawasaki, A. Kusenko, Y. Tada, and T. T. Yanagida}{口頭, 査読あり}
-\cventry{2015.12}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}
-{Second LeCosPA International Symposium "Everything About Gravity"}{National Taiwan University}{M. Kawasaki and Y. Tada}{口頭, 査読あり}
-\cventry{2015.09}{PRIMORDIAL BLACK HOLES AS BIASED TRACERS}{International Conference on Particle Physics and Cosmology (COSMO-15)}
-{The University of Warsaw}{Y. Tada and S. Yokoyama}{口頭, 査読あり}
-\cventry{2014.08}{Non-perturbative approach for curvature perturbations in stochastic-delta N formalism}
-{International Conference on Particle Physics and Cosmology (COSMO 2014)}{The Kavli Institute for Cosmological Physics (KICP), The University of Chicago}{T. Fujita, M. Kawasaki, and Y. Tada}{ポスター, 査読あり}
-\cventry{2013.09}{A new algorithm for calculating the curvature perturbations in stochastic inflation}
-{KEK Theory Meeting on Particle Physics Phenomenology (KEK-PH2013 FALL)}{KEK}{T. Fujita, M. Kawasaki, Y. Tada, and T. Takesako}{口頭, 査読あり}
+{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{poster, refereed}
+\cventry{24th--28th Oct. 2016}{Squeezed Bispectrum in the delta N Formalism without Gauge Artifact}
+{The 26th Workshop on General Relativity and Gravitation in Japan (JGRG26)}{Osaka City University}
+{Y. Tada and V. Vennin}{oral, refereed}
+\cventry{24th--28th Aug. 2016}{PBH Dark Matter in Supergravity Inflation Models}{RESCEU Summer School}{Gifu}
+{M. Kawasaki, A. Kusenko, Y. Tada, and T. T. Yanagida}{oral, not refereed}
+\cventry{14th--18th Dec. 2015}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}
+{Second LeCosPA International Symposium "Everything About Gravity"}{National Taiwan University}{M. Kawasaki and Y. Tada}{oral, refereed}
+\cventry{7th--11th Sep. 2015}{PRIMORDIAL BLACK HOLES AS BIASED TRACERS}{International Conference on Particle Physics and Cosmology (COSMO-15)}
+{The University of Warsaw}{Y. Tada and S. Yokoyama}{oral, refereed}
+\cventry{25th--29th Aug. 2014}{Non-perturbative approach for curvature perturbations in stochastic-delta N formalism}
+{International Conference on Particle Physics and Cosmology (COSMO 2014)}{The Kavli Institute for Cosmological Physics (KICP), The University of Chicago}{T. Fujita, M. Kawasaki, and Y. Tada}{poster, refereed}
+\cventry{30th Sep.--\\3rd Oct. 2013}{A new algorithm for calculating the curvature perturbations in stochastic inflation}
+{KEK Theory Meeting on Particle Physics Phenomenology (KEK-PH2013 FALL)}{KEK}{T. Fujita, M. Kawasaki, Y. Tada, and T. Takesako}{oral, refereed}
 
-\medskip
-\subsection{国内会議}
-\cventry{2018.09}{ストカスティックインフレーションのノイズ処方について}{日本物理学会秋季大会}{信州大学}
+
+\section{国内会議}
+\cventry{2020年\\9月15日}{Escape from the swamp with spectator}{日本物理学会秋季大会}{筑波大学 (オンライン)}{小粥一寛, 多田祐一郎}{口頭, 査読なし}
+\cventry{2020年\\3月17日}{極長ストカスティックインフレーション}{日本物理学会第75回年次大会}{名古屋大学}{北嶋直弥, 多田祐一郎, 高橋史宜}{口頭, 査読なし}
+\cventry{2019年\\9月20日}{多段階インフレーションによる原始ブラックホールタワー}{日本物理学会秋季大会}{山形大学}{多田祐一郎, 横山修一郎}{口頭, 査読なし}
+\cventry{2018年\\9月14日}{ストカスティックインフレーションのノイズ処方について}{日本物理学会秋季大会}{信州大学}
 {藤田智弘, L. Pinol, S. Renaux-Petel, 多田祐一郎, 徳田順生}{口頭, 査読なし}
-\cventry{2017.09}{曲がった場空間におけるストカスティック形式}{日本物理学会秋季大会}{宇都宮大学}
+\cventry{2017年\\9月12--15日}{曲がった場空間におけるストカスティック形式}{日本物理学会秋季大会}{宇都宮大学}
 {L. Pinol, S. Renaux-Petel, 多田祐一郎}{口頭, 査読なし}
-\cventry{2016.09}{超重力ニューインフレーションにおける原始ブラックホール形成}{日本物理学会秋季大会}{宮崎大学}
+\cventry{2016年9月}{超重力ニューインフレーションにおける原始ブラックホール形成}{日本物理学会秋季大会}{宮崎大学}
 {川崎雅裕, A. Kusenko, 多田祐一郎, 柳田勉}{口頭, 査読なし}
-\cventry{2016.03}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{松江素粒子物理学研究会}{島根大学}
+\cventry{2016年3月}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{松江素粒子物理学研究会}{島根大学}
 {川崎雅裕, 多田祐一郎}{口頭, 招待}
-\cventry{2015.09}{超対称ハイブリッドインフレーションでの原始ブラックホール形成}{日本物理学会秋季大会}{大阪市立大学}
+\cventry{2015年9月}{超対称ハイブリッドインフレーションでの原始ブラックホール形成}{日本物理学会秋季大会}{大阪市立大学}
 {川崎雅裕, 多田祐一郎}{口頭, 査読なし}
-\cventry{2015.03}{バイアス効果による原始ブラックホール暗黒物質への制限}{日本物理学会年次大会}{早稲田大学}
+\cventry{2015年3月}{バイアス効果による原始ブラックホール暗黒物質への制限}{日本物理学会第70回年次大会}{早稲田大学}
 {多田祐一郎, 横山修一郎}{口頭, 査読なし}
-\cventry{2014.09}{\boldmath ストカスティック-$\delta N$形式による曲率ゆらぎへの非摂動的アプローチ}{日本物理学会秋季大会}{佐賀大学}
+\cventry{2014年9月}{\boldmath ストカスティック-$\delta N$形式による曲率ゆらぎへの非摂動的アプローチ}{日本物理学会秋季大会}{佐賀大学}
 {藤田智弘, 川崎雅裕, 多田祐一郎}{口頭, 査読なし}
-\cventry{2013.09}{ストカスティック効果を用いたインフレーションのゆらぎの解析}{日本物理学会秋季大会}{高知大学}
+\cventry{2013年9月}{ストカスティック効果を用いたインフレーションのゆらぎの解析}{日本物理学会秋季大会}{高知大学}
 {藤田智弘, 川崎雅裕, 多田祐一郎, 竹迫知博}{口頭, 査読なし}
 
 
-\medskip
-\subsection{セミナー}
-\cventry{2019.06.07}{Aspects of primordial black holes and implication to multi-phase inflation}{IRAP}{Toulouse}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{}
-\cventry{2019.05.23}{Aspects of primordial black holes and implication to multi-phase inflation}{東北大学}{宮城}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{招待}
-\cventry{2018.10.09}{一般的場空間におけるストカスティックインフレーション}{立教大学}{東京}
+\section{セミナー}
+\cventry{7th Jun. 2019}{Aspects of primordial black holes and implication to multi-phase inflation}{IRAP}{Toulouse}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{}
+\cventry{23rd May 2019}{Aspects of primordial black holes and implication to multi-phase inflation}{Tohoku University}{Miyagi}{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, T. T. Yanagida, and S. Yokoyama}{invited}
+\cventry{2018年\\10月9日}{一般的場空間におけるストカスティックインフレーション}{立教大学}{東京}
 {藤田智弘, L. Pinol, S. Renaux-Petel, 多田祐一郎, 徳田順生}{招待}
-\cventry{2018.06.26}{Stochastic inflation in a general field space}{Laboratoire Astroparticule et Cosmologie}{Paris}
+\cventry{26th Jun. 2018}{Stochastic inflation in a general field space}{Laboratoire Astroparticule et Cosmologie}{Paris}
 {T. Fujita, L. Pinol, S. Renaux-Petel, Y. Tada, and J. Tokuda}{}
-\cventry{2017.09.20}{Stochastic Formalism in Curved Field Space}{名古屋大学}{愛知}
+\cventry{20th Sep. 2017}{Stochastic Formalism in Curved Field Space}{Nagoya University}{Aichi}
 {L. Pinol, S. Renaux-Petel, and Y. Tada}{}
-\cventry{2017.09.19}{Stochastic Formalism in Curved Field Space}{神戸大学}{兵庫}
+\cventry{19th Sep. 2017}{Stochastic Formalism in Curved Field Space}{Kobe University}{Hyogo}
 {L. Pinol, S. Renaux-Petel, and Y. Tada}{}
-\cventry{2017.09.04}{Stochastic Formalism in Curved Field Space}{RESCEU}{東京}
+\cventry{4th Sep. 2017}{Stochastic Formalism in Curved Field Space}{RESCEU}{Tokyo}
 {L. Pinol, S. Renaux-Petel, and Y. Tada}{}
-\cventry{2017.04.20}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{Institut Astrophysique de Paris}{Paris}
+\cventry{20th Apr. 2017}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{Institut Astrophysique de Paris}{Paris}
 {K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{}
-\cventry{2016.12.16}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{早稲田大学}{東京}
-{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{招待}
-\cventry{2016.06.22}{Stochastic-delta N formalism and massive primordial black hole formation in hybrid inflation}{Institute of Cosmology and Gravitation}{Portsmouth}
+\cventry{16th Dec. 2016}{Primordial Black Hole, Dark Matter, and LIGO's Gravitational Wave Event}{Waseda University}{Tokyo}
+{K. Inomata, M. Kawasaki, A. Kusenko, K. Mukaida, Y. Tada, and T. T. Yanagida}{invited}
+\cventry{22nd Jun. 2016}{Stochastic-delta N formalism and massive primordial black hole formation in hybrid inflation}{Institute of Cosmology and Gravitation}{Portsmouth}
 {M. Kawasaki and Y. Tada}{}
-\cventry{2016.04.18}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{東京大学}{東京}
-{M. Kawasaki and Y. Tada}{招待}
-\cventry{2016.03.29}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{京都大学}{京都}
+\cventry{18th Apr. 2016}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{The University of Toyko}{Tokyo}
+{M. Kawasaki and Y. Tada}{invited}
+\cventry{29th Mar. 2016}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{Kyoto University}{Kyoto}
 {M. Kawasaki and Y. Tada}{}
-\cventry{2016.02.29}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{RESCEU}{東京}
-{M. Kawasaki and Y. Tada}{招待}
-\cventry{2016.01.27}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{KEK}{茨城}
+\cventry{29th Feb. 2016}{Can massive primordial black holes be produced in mild waterfall hybrid inflation?}{RESCEU}{Tokyo}
+{M. Kawasaki and Y. Tada}{invited}
+\cventry{27th Jun. 2016}{Stochastic-delta N formalism and massive primordial black holes in hybrid inflation}{KEK}{Ibaraki}
 {M. Kawasaki and Y. Tada}{}
-\cventry{2015.09.14}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{University of Padova}{Padova}
+\cventry{14th--18th Sep. 2015}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{University of Padova}{Padova}
 {M. Kawasaki and Y. Tada}{}
-\cventry{2015.09.21}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{Institut Astrophysique de Paris}{Paris}
+\cventry{21th Sep. 2015}{Stochastic-deltaN formalism and primordial black holes in hybrid inflation}{Institut Astrophysique de Paris}{Paris}
 {M. Kawasaki and Y. Tada}{}
-\cventry{2015.06.25}{バイアストレーサーとしての原始ブラックホール}{名古屋大学}{愛知}
+\cventry{2015年\\6月25日}{バイアストレーサーとしての原始ブラックホール}{名古屋大学}{愛知}
 {多田祐一郎, 横山修一郎}{}
-\cventry{2015.02.16}{Primordial black holes as biased tracers}{Joint seminar of gravity and cosmology @ IPMU}{千葉}
+\cventry{16th Feb. 2015}{Primordial black holes as biased tracers}{Joint seminar of gravity and cosmology @ IPMU}{Chiba}
 {Y. Tada and S. Yokoyama}{}
-\cventry{2014.08.19}{\boldmath Stochastic-$\delta N$ formalism}{Helsinki University}{Helsinki}
+\cventry{19th Aug. 2014}{\boldmath Stochastic-$\delta N$ formalism}{Helsinki University}{Helsinki}
 {T. Fujita, M. Kawasaki, Y. Tada, and T. Takesako}{}
 
 
+
 \section{研究者活動}
-\cventry{2014.10.01--12.22}{留学}{}{ヘルシンキ大学 Kari Enqvist 教授}{}{フォトンサイエンス・リーディング大学院のコースワーク}
+\cventry{2014年\\10月1日--12月22日}{留学}{}{ヘルシンキ大学}{Kari Enqvist 教授}{フォトンサイエンス・リーディング大学院のコースワーク}
 \cventry{}{査読}{}{}{}{European Physical Journal C (EPJC), 
-Progress of Theoretical and Experimental Physics (PTEP),
 Journal of Cosmology and Astroparticle Physics (JCAP),
-Physical Review D (PRD)}
-
-\medskip
-\subsection{採択・受賞歴}
-
-\cventry{2019.04--}{科学研究費助成事業}{}{若手研究「ストカスティック形式で迫る重力と量子論」}{研究代表者}{1,560,000円 (2019年度--2020年度)}
-\cventry{2019.02}{FAPESP-JSPS Workshop on dark energy, dark matter, and galaxies}{}{若手代表発表者}{}{}
-\cventry{2017.02.24}{所長賞 (博士部門)}{}{第6回 修士博士研究発表会}{宇宙線研究所}{}
-\cventry{2015.07.30}{ポスターアワード1位}{}{第45回天文・天体物理若手夏の学校}{長野}{}
-\cventry{2013.08.01}{ポスターアワード1位}{}{第43回天文・天体物理若手夏の学校}{宮城}{}
+Modern Physics Letters A (MPLA),
+Physical Review D (PRD),
+Progress of Theoretical and Experimental Physics (PTEP),
+Universe}
+\cventry{}{サイエンスメンバー}{International Research Network Extragalactic astrophysics and Cosmology (NECO)}{}{}{}
 
 
+\section{採択・受賞歴}
+\cventry{2019年2月}{若手代表発表者}{FAPESP-JSPS Workshop on dark energy, dark matter, and galaxies}{}{}{}
+\cventry{2017年\\2月24日}{所長賞 (博士部門)}{第6回 修士博士研究発表会}{宇宙線研究所}{東京大学}{}
+%\cventry{2015.07.30}{ポスターアワード1位}{}{第45回天文・天体物理若手夏の学校}{長野}{}
+%\cventry{2013.08.01}{ポスターアワード1位}{}{第43回天文・天体物理若手夏の学校}{宮城}{}
 
+\section{外部資金獲得状況}
+\cventry{2019年度--\\2021年度}{科学研究費助成事業若手研究}{「ストカスティック形式で迫る重力と量子論」}{}{}{No. 19K14707, 代表研究者, ¥1,560,000}
+\cventry{2018年度--\\2021年度}{科学研究費助成事業特別研究員奨励費}{「インフレーション宇宙における曲率ゆらぎと原始ブラックホール形成」}{}{}{No. 18J01992, 特別研究員 (PD), ¥3,640,000}
+\cventry{2015年度--\\2017年度}{科学研究費助成事業特別研究員奨励費}{「ストカスティック形式で迫る重力と量子論」}{}{}{No. 15J10829, 特別研究員 (DC2), ¥1,900,000}
+
+
+\begin{comment}
 \section{指導教員}
 \cvitem{}{
 \begin{minipage}[t]{0.49\textwidth}
