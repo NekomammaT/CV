@@ -26,7 +26,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,letterpaper,sans]{moderncv} 
+\documentclass[11pt,a4paper,sans]{moderncv} 
 % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -47,10 +47,17 @@
 \setjasansfont[BoldFont=Hiragino Sans W6]{Hiragino Sans W3}
 \xeCJKsetup{CJKecglue={}}
 
+\usepackage{graphicx}
+\usepackage{xcolor}
 \usepackage{comment}
 \usepackage{amsmath,amssymb}
 \usepackage{academicons}
 \usepackage{pxrubrica}
+
+\definecolor{MONZA}{HTML}{CF000F}
+\definecolor{DARKBLUE}{HTML}{00008b}
+\definecolor{DARKMAGENTA}{HTML}{8b008b}
+
 
 
 \newcommand{\doi}[2]{\href{https://doi.org/#1}{#2}}
@@ -79,13 +86,13 @@
 % All information in this block is optional, comment out any lines you don't need
 \title{履歴書 \vspace{30pt}}
 %\title{履歴書 \vspace{60pt}}
-\address{466-0833 愛知県名古屋市}{昭和区隼人町 15-10-4A}
+\address{466-0833 愛知県名古屋市}{昭和区隼人町 15-10 \\ ファルコ南山 4A \\}
 \mobile{080-9566-9181}
 %\phone{33 (1) 44 32 80 00}
 %\fax{(000) 111 1113}
-\email{tada.yuichiro@e.mbox.nagoya-u.ac.jp}
+\email{tada.yuichiro.y8@f.mail.nagoya-u.ac.jp}
 \homepage{nekomammat.github.io/indexJP.html}{https://nekomammat.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{1989年11月1日生まれ (満30歳) \\
+\extrainfo{1989年11月1日生まれ (満32歳) \\
 {\large \href{https://www.facebook.com/yuichiro.tada.90}{\facebook} \, 
 \href{https://twitter.com/NekomammaT}{\twitter} \, 
 \href{https://inspirehep.net/authors/1316436}{\aiInspire} \, 
@@ -100,6 +107,18 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
+\hypersetup{colorlinks=true
+,urlcolor=DARKBLUE
+,anchorcolor=DARKBLUE
+,citecolor=DARKBLUE
+,filecolor=DARKBLUE
+,linkcolor=DARKBLUE
+,menucolor=DARKBLUE
+%,pagecolor=DARKBLUE
+,linktocpage=true
+,pdfproducer=medialab
+,pdfa=true}
 
 \sffamily
 
@@ -136,17 +155,19 @@
 
 \makecvtitle % Print the CV title
 
-\vspace{-40pt}
+\vspace{-20pt}
+%\vspace{-40pt}
 %\vspace{-60pt}
 \section{職歴, フェローシップ}
-\cventry{2019年4月--\\現在}{非常勤講師}{大同大学}{名古屋}{}{力学1, 2}
-\cventry{2018年4月--\\現在}{日本学術振興会特別研究員PD}{名古屋大学}{名古屋}{}{理学研究科 宇宙論研究室}
+\cventry{2021年4月--\\現在}{特任助教}{名古屋大学}{名古屋}{}{高等研究院・理学研究科 宇宙論研究室}
+\cventry{2019年4月--\\2021年3月}{非常勤講師}{大同大学}{名古屋}{}{力学1, 2}
+\cventry{2018年4月--\\2021年3月}{日本学術振興会特別研究員PD}{名古屋大学}{名古屋}{}{理学研究科 宇宙論研究室}
 \cventry{2017年4月--\\2018年3月}{ポスドク研究員}{Institut d'Astrophysique de Paris}{Paris}{France}{S\'ebastien Renaux-Petel 博士のグループ}
 \cventry{2015年4月--\\2017年3月}{日本学術振興会特別研究員DC2}{東京大学}{千葉}{}{カブリ数物連携宇宙研究機構・宇宙線研究所}
 \cventry{2012年10月--2017年3月}{フォトンサイエンス・リーディング大学院}{東京大学}{千葉}{}{カブリ数物連携宇宙研究機構・宇宙線研究所}
 
 
-\vspace{-10pt}
+%\vspace{-10pt}
 \section{学歴}
 \cventry{2017年\\3月23日}{博士 (理学)}{東京大学}{千葉}{}
 {理学系研究科物理学専攻. 指導教官: 川崎雅裕, 村山斉}
@@ -155,30 +176,31 @@
 \cventry{2012年\\3月23日}{学士 (理学)}{東京大学}{東京}{}{理学部物理学科}
 
 
-\vspace{-10pt}
+%\vspace{-10pt}
 \section{研究テーマ}
 \subsection{インフレーション}
-\cvitem{}{\vspace{-15pt}
+\cvitem{}{\vspace{-10pt}
 \begin{itemize} %\itemsep2mm
-	\item[-] ストカスティック効果, $\delta N$形式, 非ガウス性
-	\item[-] 超重力, 大統一理論, 修正重力
+	\item[-] 確率解析, $\delta N$形式, 非ガウス性
+	\item[-] 超重力, 修正重力, ヒッグスインフレーション
 	\item[-] 曲がった対象空間
 \end{itemize}
 }
 
 \vspace{-15pt}
-\subsection{原始ブラックホール }
-\cvitem{}{\vspace{-15pt}
+\subsection{原始ブラックホール}
+\cvitem{}{\vspace{-10pt}
 \begin{itemize}
-	\item[-] 重力波, バイアス・クラスター効果
+	\item[-] 暗黒物質, 重力波
+	\item[-] 存在量見積もり
 \end{itemize}
 }
 
 \vspace{-15pt}
-\subsection{ヘリカル粒子生成}
-\cvitem{}{\vspace{-15pt}
+\subsection{粒子生成}
+\cvitem{}{\vspace{-10pt}
 \begin{itemize} %\itemsep2mm
-	\item[-] インフレーション磁場生成, ヘリカル重力波, レプトン・バリオン生成
+	\item[-] インフレーション磁場生成, 円偏光重力波
 \end{itemize}
 }
 
@@ -188,18 +210,28 @@
 
 \section{論文}
 
-\cvitem{20.}{T.~Suyama, Y.~Tada and M.~Yamaguchi,
-	\textbf{Local observer effect on the cosmological soft theorem},
-	[\arxiv{2008.13364}{astro-ph.CO}].
-}
-\cvitem{19.}{L.~Pinol, S.~Renaux-Petel and Y.~Tada,
-	\textbf{A manifestly covariant theory of multifield stochastic inflation in phase space},
-	[\arxiv{2008.07497}{astro-ph.CO}].
-}
-\cvitem{18.}{Y.~Mikura, Y.~Tada and S.~Yokoyama,
-	\textbf{Conformal inflation in the metric-affine geometry},
-	[\arxiv{2008.00628}{hep-th}].
-}
+\cventry{28.}{Effective treatment of U(1) gauge field and charged particles in axion inflation}{}{\arxiv{2204.01180}{hep-ph}}{T.~Fujita, J.~Kume, K.~Mukaida and Y.~Tada}{}
+
+\cventry{27.}{Simulation of primordial black holes with large negative non-Gaussianity}{\doi{10.1088/1475-7516/2022/05/012}{JCAP \textbf{05}, no.05, 012 (2022)}}{\arxiv{2202.01028}{astro-ph.CO}}{A.~Escriv\`a, Y.~Tada, S.~Yokoyama and C.~M.~Yoo}{}
+
+\cventry{$\circ$ 26.}{Statistics of coarse-grained cosmological fields in stochastic inflation}{\doi{10.1088/1475-7516/2022/02/021}{JCAP \textbf{02}, no.02, 021 (2022)}}{\arxiv{2111.15280}{astro-ph.CO}}{Y.~Tada and V.~Vennin}{}
+
+\cventry{$\circ$ 25.}{On UV-completion of Palatini-Higgs inflation}{}{\arxiv{2110.03925}{hep-ph}}{Y.~Mikura and Y.~Tada}{}
+
+\cventry{24.}{Primordial black holes in peak theory with a non-Gaussian tail}{\doi{10.1088/1475-7516/2021/10/053}{JCAP \textbf{10}, 053 (2021)}}{\arxiv{2109.00791}{astro-ph.CO}}{N.~Kitajima, Y.~Tada, S.~Yokoyama and C.~M.~Yoo}{}
+
+\cventry{23.}{\boldmath Minimal $k$-inflation in light of the conformal metric-affine geometry}{\doi{10.1103/PhysRevD.103.L101303}{Phys. Rev. D \textbf{103}, no.10, L101303 (2021)}}{\arxiv{2103.13045}{hep-th}}{Y.~Mikura, Y.~Tada and S.~Yokoyama}{}
+
+\cventry{22.}{Revisiting non-Gaussianity in non-attractor inflation models in the light of the cosmological soft theorem}{\doi{10.1093/ptep/ptab063}{PTEP \textbf{2021}, no.7, 073E02 (2021)}}{\arxiv{2101.10682}{hep-th}}{T.~Suyama, Y.~Tada and M.~Yamaguchi}{}
+
+\cventry{21.}{Induced gravitational waves as a cosmological probe of the sound speed during the QCD phase transition}{\doi{10.1088/1475-7516/2021/06/048}{JCAP \textbf{06}, 048 (2021)}}{\arxiv{2010.06193}{astro-ph.CO}}{K.~T.~Abe, Y.~Tada and I.~Ueda}{}
+
+\cventry{20.}{Local observer effect on the cosmological soft theorem}{\doi{10.1093/ptep/ptaa144}{PTEP \textbf{2020}, no.11, 113E01 (2020)}}{\arxiv{2008.13364}{astro-ph.CO}}{T.~Suyama, Y.~Tada and M.~Yamaguchi}{}
+
+\cventry{19.}{A manifestly covariant theory of multifield stochastic inflation in phase space}{\doi{10.1088/1475-7516/2021/04/048}{JCAP \textbf{04}, 048 (2021)}}{\arxiv{2008.07497}{astro-ph.CO}}{L.~Pinol, S.~Renaux-Petel and Y.~Tada}{}
+
+\cventry{18.}{Conformal inflation in the metric-affine geometry}{\doi{10.1209/0295-5075/132/39001}{EPL \textbf{132}, no.3, 39001 (2020)}}{\arxiv{2008.00628}{hep-th}}{Y.~Mikura, Y.~Tada and S.~Yokoyama}{\href{https://iopscience.iop.org/journal/0295-5075/page/Highlights-of-2020}{\textbf{EPL 2020 Highlight}}}
+
 \cvitem{17.}{K.~Kogai and Y.~Tada,
 	\textbf{Escape from the swampland with a spectator field},
 	\doi{10.1103/PhysRevD.101.103514}{Phys. Rev. D \textbf{101}, no.10, 103514 (2020)}
@@ -282,6 +314,7 @@
 
 
 \section{国際会議}
+
 \cventry{20th Aug. 2020}{Manifestly covariant theory of stochastic inflation}{The 14th International Conference on Gravitation, Astrophysics and Cosmology (ICGAC14)}{National Central University, Taiwan (Web Conference)}{L. Pinol, S. Renaux-Petel, Y. Tada, V. Vennin}{oral, refereed}
 \cventry{6th Dec. 2019}{Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes}{Focus Week on Primordial Black Holes}{Kavli IPMU}{Y. Tada and S. Yokoyama}{oral, refereed}
 \cventry{27th Nov. 2019}{Stochastic inflation with an extremely large number of e-folds}{The 29th Workshop on General Relativity and Gravitation in Japan (JGRG29)}{Kobe University}{N. Kitajima, Y. Tada, and F. Takahashi}{oral, refereed}
